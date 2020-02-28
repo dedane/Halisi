@@ -4,6 +4,8 @@ import SplashScreen from '../views/SplashScreen.vue'
 import QrScan from '../views/QrScan.vue'
 import landingpage from '../views/landingpage.vue'
 import SignUp from '../views/SignUp.vue'
+import Login from '../views/Login.vue'
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -35,6 +37,11 @@ const routes = [
     name: 'SignUp',
     component: SignUp
   },
+  {
+    path: '/Login',
+    name: 'Login',
+    component: Login
+  }
 ]
 
 const router = new VueRouter({
