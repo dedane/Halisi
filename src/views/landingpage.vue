@@ -22,12 +22,6 @@ export default {
 }
 </script>
 <style lang="scss">
-    html,body{
-        background-color: #2c5b86;
-        height: 100%;
-        margin: 0%;
-        padding: 0%;
-      
-    }
+    
     
 </style>

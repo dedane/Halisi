@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import SplashScreen from '../views/SplashScreen.vue'
 import QrScan from '../views/QrScan.vue'
 import landingpage from '../views/landingpage.vue'
 Vue.use(VueRouter)
@@ -8,8 +8,8 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home
+    name: 'SplashScreen',
+    component: SplashScreen
   },
   {
     path: '/about',
