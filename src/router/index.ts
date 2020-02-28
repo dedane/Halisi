@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import SplashScreen from '../views/SplashScreen.vue'
 import QrScan from '../views/QrScan.vue'
 import landingpage from '../views/landingpage.vue'
+import SignUp from '../views/SignUp.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -12,12 +13,12 @@ const routes = [
     component: SplashScreen
   },
   {
-    path: '/about',
-    name: 'About',
+    path: '/Registration',
+    name: 'Registration',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../views/Registration.vue')
   },
   {
     path: '/QrScan',
@@ -28,7 +29,12 @@ const routes = [
     path: '/landingpage',
     name: 'landingpage',
     component: landingpage
-  }
+  },
+  {
+    path: '/SignUp',
+    name: 'SignUp',
+    component: SignUp
+  },
 ]
 
 const router = new VueRouter({

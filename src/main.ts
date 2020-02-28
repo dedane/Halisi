@@ -4,8 +4,11 @@ import router from './router'
 import store from './store'
 //import VueQrcodeReader from 'vue-qrcode-reader';
 import Vuetify from 'vuetify';
+import 'material-design-icons-iconfont/dist/material-design-icons.css'
 import 'vuetify/dist/vuetify.min.css'
 import vuetify from './plugins/vuetify';
+
+
 
 
 Vue.config.productionTip = false
