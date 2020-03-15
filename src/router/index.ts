@@ -1,6 +1,5 @@
 import Vue from 'vue'
-import VueRouter from 'vue-router'
-import SplashScreen from '../views/SplashScreen.vue'
+import VueRouter from 'vue-router' 
 import QrScan from '../views/QrScan.vue'
 import landingpage from '../views/landingpage.vue'
 import SignUp from '../views/SignUp.vue'
@@ -9,11 +8,7 @@ import Login from '../views/Login.vue'
 Vue.use(VueRouter)
 
 const routes = [
-  {
-    path: '/',
-    name: 'SplashScreen',
-    component: SplashScreen
-  },
+ 
   {
     path: '/Registration',
     name: 'Registration',
@@ -28,7 +23,7 @@ const routes = [
     component: QrScan
   },
   {
-    path: '/landingpage',
+    path: '/',
     name: 'landingpage',
     component: landingpage
   },
