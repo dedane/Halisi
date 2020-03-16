@@ -18,11 +18,11 @@
                             About Us
                         </v-btn>
 
-                      <v-btn class="text-center mx-2 " rounded outlined color="#6FCF97">
+                      <v-btn class="text-center mx-2 " rounded outlined color="#6FCF97" @click="$router.push('Login')">  
                           Login
                       </v-btn>
 
-                      <v-btn class="text-center mx-2" rounded color="#6FCF97">
+                      <v-btn class="text-center mx-2" rounded color="#6FCF97" @click="$router.push('SignUp')">  
                           Register    
                       </v-btn>
                    </v-toolbar>

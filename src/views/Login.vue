@@ -2,7 +2,9 @@
   <v-content>
      <!-- <div id="login">
           </div> -->
-<v-layout justify-center style="margin-top:10%">
+          <Header></Header>
+<section id="firebaseui-auth-container"></section>
+<!-- <v-layout justify-center style="margin-top:10%">
 
   <v-flex xs12 sm8 md4>
 
@@ -55,19 +57,42 @@
         </v-layout>
       </v-card>
     </v-flex>
-</v-layout>
+</v-layout> -->
 
       
   </v-content>
 </template>
 
 <script>
+import "firebaseui/dist/firebaseui.css";
+import * as firebase from "firebase/app";
+import "firebase/auth";
+import * as firebaseui from 'firebaseui';
+import Header from "@/components/Header"
+
+
 export default {
     name: 'login',
+    components: {
+      Header
+    }, 
+     mounted() {
+      let ui = firebaseui.auth.AuthUI.getInstance();
+      if (!ui) {
+        ui = new firebaseui.auth.AuthUI(firebase.auth());
+      }
+      var uiConfig = {
+        signInSuccessUrl: "Profile",
+        signInOptions: [firebase.auth.FacebookAuthProvider.PROVIDER_ID, firebase.auth.GoogleAuthProvider.PROVIDER_ID]
+      };
+      ui.start("#firebaseui-auth-container",uiConfig);
+    },
     data: () => ({
         email: '',
         password: ''
-    })
+    }),
+
+   
 }
 </script>
 

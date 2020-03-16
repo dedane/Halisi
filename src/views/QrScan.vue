@@ -15,6 +15,7 @@
 
 <script lang="ts">
 
+import * as firebase from "firebase/app";
 import {Component, Vue} from 'vue-property-decorator';
 import HelloWorld from '@/components/HelloWorld.vue';
 import QrcodeVue from  'qrcode.vue';
@@ -25,6 +26,7 @@ import QrcodeVue from  'qrcode.vue';
         QrcodeVue
     }
 })
+
 export default class Home extends Vue{
 
     public isShowingCamera:boolean = false;
@@ -65,8 +67,9 @@ export default class Home extends Vue{
         } finally {
             //hide loading indicator
         }
+     }
     }
-    }
+    
     
 
 </script>

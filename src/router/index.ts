@@ -4,6 +4,7 @@ import QrScan from '../views/QrScan.vue'
 import landingpage from '../views/landingpage.vue'
 import SignUp from '../views/SignUp.vue'
 import Login from '../views/Login.vue'
+import Profile from '../views/profile.vue'
 
 Vue.use(VueRouter)
 
@@ -31,6 +32,11 @@ const routes = [
     path: '/SignUp',
     name: 'SignUp',
     component: SignUp
+  },
+  {
+    path: '/Profile',
+    name: 'Profile',
+    component: Profile
   },
   {
     path: '/Login',

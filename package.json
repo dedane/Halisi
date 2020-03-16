@@ -10,6 +10,8 @@
     "@mdi/js": "^4.9.95",
     "core-js": "^3.6.4",
     "eslint-config-airbnb": "^18.0.1",
+    "firebase": "^7.11.0",
+    "firebaseui": "^4.5.0",
     "material-design-icons-iconfont": "^5.0.1",
     "qrcode-vue": "^1.2.0",
     "qrcode.vue": "^1.7.0",
