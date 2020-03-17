@@ -2,30 +2,7 @@
     <div id="landing">
                 
                <v-card class="mx-auto"  > 
-                   <v-toolbar
-                      color="#3F6990"
-                      dark="">
-                      <v-img src="https://ik.imagekit.io/ugyodiq15/Halisi_pQwDn_AxS.png" max-width="100" max-height="100"/>                    
-                        <v-spacer/>
-
-                        <v-btn class="text-center mx-4" text>
-                            Products
-                        </v-btn>
-                        <v-btn class="text-center mx-4" text>
-                            Companies
-                        </v-btn>
-                        <v-btn class="text-center mx-8" text>
-                            About Us
-                        </v-btn>
-
-                      <v-btn class="text-center mx-2 " rounded outlined color="#6FCF97" @click="$router.push('Login')">  
-                          Login
-                      </v-btn>
-
-                      <v-btn class="text-center mx-2" rounded color="#6FCF97" @click="$router.push('SignUp')">  
-                          Register    
-                      </v-btn>
-                   </v-toolbar>
+                   <NavBar></NavBar>
 
                     <v-container fluid>
                     <v-row >
@@ -135,7 +112,7 @@
                             <v-flex >
                           <v-layout row wrap justify-center align-center justify-space-around>
                             <v-card-title primary-title class="display-2 ma-6 pa-4">
-                                'Validated companies'
+                                Validated companies
                              </v-card-title>
                              
                              
@@ -153,9 +130,25 @@
 
                         
                     </v-row>
+                    <v-row>
+                    <v-flex>
+                      <v-layout>
                     
-                    <v-card class="mx-auto" max-width="700" color="#009587">
-                    </v-card>
+                      <v-card
+                        color="success"
+                        dark
+                        max-height="500"
+                        
+                      >
+                    
+
+                      </v-card>
+                    
+                      </v-layout>
+                    </v-flex>
+                    </v-row>
+                    
+                    
                        <!-- <v-col
                              <v-col
                                 v-for="card in cards"
@@ -202,14 +195,26 @@
                     </v-container>
               </v-card> 
 
+              <!-- <v-row>
+                <v-container>
+                  <v-card 
+                  color="#009587"
+                  max-width="500"
+                  class="mx-auto"
+                  dark>
+                  </v-card>
+                </v-container>
+              </v-row> -->
+              
   <v-footer
     dark
     padless
-    max-width="1200"
+    
   >
     <v-card
       flat
       tile
+      width="100%"
       class="indigo lighten-1 white--text text-center"
     >
       <v-card-text>
@@ -239,9 +244,15 @@
     </div>
   
 </template>
+
 <script>
+import NavBar from "@/components/NavBar"
+
 export default {
     name: 'landing',
+    components: {
+      NavBar
+    },
     data: () => ({
         foods: [
             {title: 'validate all food products  ', subtitle: 'live a long and healthy life protect yourself' ,src: 'https://ik.imagekit.io/ugyodiq15/QR_app_urlx_N9aS.png'},
@@ -255,7 +266,8 @@ export default {
         'mdi-linkedin',
         'mdi-instagram ',
       ],
-    }),
+    })
+    
     
 }
 </script>

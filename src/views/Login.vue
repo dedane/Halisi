@@ -2,7 +2,7 @@
   <v-content>
      <!-- <div id="login">
           </div> -->
-          <Header></Header>
+          <NavBar> </NavBar>
 <section id="firebaseui-auth-container"></section>
 <!-- <v-layout justify-center style="margin-top:10%">
 
@@ -68,13 +68,14 @@ import "firebaseui/dist/firebaseui.css";
 import * as firebase from "firebase/app";
 import "firebase/auth";
 import * as firebaseui from 'firebaseui';
-import Header from "@/components/Header"
+
+import NavBar from "@/components/NavBar"
 
 
 export default {
     name: 'login',
     components: {
-      Header
+      NavBar
     }, 
      mounted() {
       let ui = firebaseui.auth.AuthUI.getInstance();
@@ -82,7 +83,7 @@ export default {
         ui = new firebaseui.auth.AuthUI(firebase.auth());
       }
       var uiConfig = {
-        signInSuccessUrl: "Profile",
+        signInSuccessUrl: "/",
         signInOptions: [firebase.auth.FacebookAuthProvider.PROVIDER_ID,
                         firebase.auth.GoogleAuthProvider.PROVIDER_ID,
                         firebase.auth.EmailAuthProvider.PROVIDER_ID]
