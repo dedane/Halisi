@@ -73,6 +73,7 @@
                             
                             <v-flex >
                           <v-layout row wrap justify-center align-center justify-space-around>
+                            
                             <v-card-title primary-title class="display-2 ma-6 pa-4">
                                 Standards set
                              </v-card-title>
@@ -125,28 +126,62 @@
                                <v-btn  color="success"  class="">Scan Now</v-btn>
                              </v-layout>
                             </v-flex>
+
+                      
+                    
                             
                         </v-col>
 
                         
                     </v-row>
-                    <v-row>
-                    <v-flex>
-                      <v-layout>
+
+                   
+                    
+                    
+                    
                     
                       <v-card
                         color="success"
                         dark
-                        max-height="500"
-                        
+                        class="mx-auto"
                       >
-                    
+                    <v-row>
+                      <v-col>
+                      <v-layout row wrap justify-center align-center justify-space-around ma-8 pa-8>
+                       <v-card-title primary-title class="display-2 ma-6 pa-4">
+                                Get The App 
+                             </v-card-title>
+                        <v-card-text class="text-center" >
+                                    Join Halisi, And consume standard healthy food
+                                </v-card-text>
+                      <v-card-actions>
+                               <v-btn width="auto" height="auto"  ><v-img height="69"  width="176"
+                               src="https://ik.imagekit.io/ugyodiq15/DOWNLOAD-PLAYSTORE-21.png.renditions.extra-small_2qPo5sfJu.png"></v-img></v-btn>
+                               <v-btn width="auto" height="auto" ><v-img height="69"  width="176" src="https://ik.imagekit.io/ugyodiq15/640px-Available_on_the_App_Store__black__CV6sFhoHt.png"></v-img></v-btn>
+                      </v-card-actions>
+                        </v-layout>
+                      </v-col>
 
+                      <v-col>
+                        
+                            <v-flex class="d-flex flex-row mb-6" justify-end>
+                                <v-img max-width="500" src="https://ik.imagekit.io/ugyodiq15/qr_app_1_eEP5E4bkpnJ.png"> <</v-img> 
+                                
+                            </v-flex>
+                                
+                                  
+                                
+                        
+                      </v-col>
+                           
+                             
+                    
+                    </v-row>
                       </v-card>
                     
-                      </v-layout>
-                    </v-flex>
-                    </v-row>
+                      
+                    
+                    
                     
                     
                        <!-- <v-col
