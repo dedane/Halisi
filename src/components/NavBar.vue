@@ -5,7 +5,7 @@
                       <v-img src="https://ik.imagekit.io/ugyodiq15/Halisi_pQwDn_AxS.png" max-width="100" max-height="100" @click="$router.push('/')"/>                    
                         <v-spacer/>
 
-                        <v-btn class="text-center mx-4" text>
+                        <v-btn class="text-center mx-4" @click="$router.push('Product')" text>
                             Products
                         </v-btn>
                         <v-btn class="text-center mx-4" text>

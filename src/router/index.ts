@@ -5,6 +5,7 @@ import landingpage from '../views/landingpage.vue'
 import SignUp from '../views/SignUp.vue'
 import Login from '../views/Login.vue'
 import Profile from '../views/profile.vue'
+import Product from '../views/Product.vue'
 
 Vue.use(VueRouter)
 
@@ -42,6 +43,12 @@ const routes = [
     path: '/Login',
     name: 'Login',
     component: Login
+  },
+  {
+    path: '/Product',
+    name: 'Product',
+    component: Product
+
   }
 ]
 

@@ -165,7 +165,7 @@
                       <v-col>
                         
                             <v-flex class="d-flex flex-row mb-6" justify-end>
-                                <v-img max-width="500" src="https://ik.imagekit.io/ugyodiq15/qr_app_1_eEP5E4bkpnJ.png"> <</v-img> 
+                                <v-img max-width="500" src="https://ik.imagekit.io/ugyodiq15/qr_app_1_eEP5E4bkpnJ.png"> </v-img> 
                                 
                             </v-flex>
                                 
@@ -270,7 +270,7 @@
       <v-divider></v-divider>
 
       <v-card-text class="white--text">
-        {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
+        {{ new Date().getFullYear() }} — <strong>Halisi</strong>
       </v-card-text>
     </v-card>
   </v-footer>
