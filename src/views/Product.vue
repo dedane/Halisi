@@ -105,39 +105,34 @@
                 </v-row>
             </div>
 
-            <div class="featured">
+            <div class="comments">
                 <v-row>
                     <v-container fluid>
-                      
-                        
                         <v-row>
                             <v-col
-                            v-for="feature in features"
-                            :key="feature.title"
-                            :cols="feature.flex" >
-                                <v-card class="ma-8">
-                                    <v-img 
-                                    :src="feature.src" 
-                                    class="white--text align-end"
-                                    gradient="to bottom, rgba(0,0,0,.1),rgba(0,0,0,.5)"
-                                    height="200px">
-                                        <v-card-title  v-text="feature.title"></v-card-title>
-                                    </v-img>
-                                <v-card-actions>
-
-                                    <v-btn icon>
-                                        <v-icon>mdi-heart</v-icon>
+                            v-for="comment in comments"
+                            :key="comment.name"
+                            :cols="comment.flex"
+                            >
+                            <v-card max-width="1000" class="ma-8" color="#3F6990">
+                                <span class="title font-weight-light" v-text="comment.name"></span>
+                                <v-card-text class="headline font-weight-bold" v-text="comment.body">
+                                    
+                                </v-card-text>  
+                                <v-card-actions >
+                                    <v-btn >
+                                        <v-icon >mdi-heart</v-icon>
                                         <v-text>Like</v-text>
                                     </v-btn>
-
-                                    <v-spacer/>
-
+                                        <v-spacer />
                                     <v-btn>
-                                        <v-icon>mdi-share-variant</v-icon>
+                                        <v-icon >mdi-share-variant</v-icon>
                                         <v-text>Share</v-text>
                                     </v-btn>
+
                                 </v-card-actions>
-                                </v-card>
+                            </v-card>
+
                             </v-col>
                         </v-row>
                     </v-container>
@@ -169,6 +164,12 @@ export default {
             {title: "Alinsons own Bread" , src: "https://ik.imagekit.io/ugyodiq15/download__1__G_0Ro2-Lp.jpg", flex:4 },
             {title: "Tuna", src:"https://ik.imagekit.io/ugyodiq15/tuna_GrZP5K3El.jpg" , flex:4 },
             {title: "Indomine" , src: "https://ik.imagekit.io/ugyodiq15/download__2__odkGv2_zaCZ.jpg" , flex:4 },
+        ],
+        comments: [
+            {name:"Salmon Sea salt",body:"Goes well with broth and can season all your meals favourably",flex: 3},
+            {name:"Salmon Sea salt",body:"Goes well with broth and can season all your meals favourably",flex: 3},
+            {name:"Salmon Sea salt",body:"Goes well with broth and can season all your meals favourably",flex: 3},
+            {name:"Salmon Sea salt",body:"Goes well with broth and can season all your meals favourably",flex: 3},
         ]
     })
 
@@ -223,6 +224,14 @@ export default {
     text-align: center;
     font-size: 40px;
     top: 200px;
+}
+.comments{
+    position: relative;
+    top: 200px;
+    text-align: center;
+    font-size: 40px;
+    top: 300px;
+    bottom: 200px;
 }
 
 </style>
