@@ -17,7 +17,7 @@
                         </v-text>
                     </v-flex>
                 </v-layout>
-                <v-layout row wrap justify-center align-center justify-space-around ma-12 pt-12>
+                <v-layout row wrap justify-center align-center justify-space-around ma-12 pt-18>
                     <v-flex xs12 md5 justify-space-around mb-4>
                         <v-btn  color="#Decc27" block  large ><v-icon left>{{icons.mdiGoogle}}</v-icon>Google</v-btn>
                     </v-flex>

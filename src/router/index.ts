@@ -6,6 +6,7 @@ import SignUp from '../views/SignUp.vue'
 import Login from '../views/Login.vue'
 import Profile from '../views/profile.vue'
 import Product from '../views/Product.vue'
+import Company from '../views/company signUp.vue'
 
 Vue.use(VueRouter)
 
@@ -48,6 +49,12 @@ const routes = [
     path: '/Product',
     name: 'Product',
     component: Product
+
+  },
+  {
+    path: '/Company',
+    name: 'Company',
+    component: Company
 
   }
 ]

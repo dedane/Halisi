@@ -24,7 +24,7 @@
          </v-flex>
        </v-layout>
 
-        <v-layout row wrap justify-center align-center justify-space-around ma-6>
+        <v-layout row wrap justify-center  justify-space-around ma-6>
           <v-flex xs7 md5 justify-space-around mb-4>
             <v-btn color="success" block outlined large>Sign In</v-btn>
           </v-flex>

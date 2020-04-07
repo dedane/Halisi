@@ -8,7 +8,7 @@
                         <v-btn class="text-center mx-4" @click="$router.push('Product')" text>
                             Products
                         </v-btn>
-                        <v-btn class="text-center mx-4" text>
+                        <v-btn class="text-center mx-4" @click="$router.push('Company')" text>
                             Companies
                         </v-btn>
                         <v-btn class="text-center mx-8" text>
