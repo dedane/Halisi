@@ -5,7 +5,7 @@
 <v-container fluid>
     
   <v-row >
-     <v-col class="info">   
+     <v-col class="info" style="height: 100%">   
         <v-flex >
 
             <v-layout row wrap justify-center justify-space-around>
@@ -89,7 +89,7 @@ import Footer from "@/components/Footer"
 
 export default {
     name: 'company',
-    component: {
+    components: {
          NavBar,
             Footer
     },
