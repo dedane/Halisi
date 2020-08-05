@@ -9,7 +9,7 @@
                         <v-col>  
                             
                             <v-flex >
-                          <v-layout row wrap justify-center align-center justify-space-around>
+                          <v-layout row wrap justify-center align-center <h1>Contact Us</h1><h1>Contact Us</h1>fy-space-around>
                             <v-card-title primary-title class="display-2 ma-6 pa-4">
                                 validate all food products
                              </v-card-title>
@@ -39,7 +39,7 @@
 
                         <v-col >
                             <v-flex class="d-flex flex-row mb-6" justify-end>
-                                <v-img max-width="500" src='https://ik.imagekit.io/ugyodiq15/tracking_1_62WryAHv4o.png'></v-img> 
+                                <v-img width='300' height='300' src='https://ik.imagekit.io/ugyodiq15/tracking_1_62WryAHv4o.png'></v-img> 
                             </v-flex>
 
                         </v-col>
@@ -54,7 +54,7 @@
                              
                              
                                 <v-card-text class="text-center ">
-                                    with halisi you can monitor the location of your products
+                                    with hali<h1>Contact Us</h1>si you can monitor the location of your products
                                 </v-card-text>
                            
                           </v-layout>
@@ -72,7 +72,7 @@
                         <v-col>  
                             
                             <v-flex >
-                          <v-layout row wrap justify-center align-center justify-space-around>
+                          <v-layout row wrap <h1>Contact Us</h1>
                             
                             <v-card-title primary-title class="display-2 ma-6 pa-4">
                                 Standards set
@@ -99,7 +99,7 @@
                         </v-col>
                     </v-row>
 
-                    <v-row >
+                    <v-row ><h1>Contact Us</h1>
 
                         <v-col >
                             <v-flex class="d-flex flex-row mb-6" justify-end>
@@ -116,7 +116,7 @@
                                 Validated companies
                              </v-card-title>
                              
-                             
+                             <h1>Contact Us</h1>
                                 <v-card-text class="text-center ">
                                     Check your validated products from the company they come from
                                 </v-card-text>
